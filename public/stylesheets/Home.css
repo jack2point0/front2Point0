@@ -1,0 +1,51 @@
+.aboutContainer {
+  align-items: center;
+  position: relative;
+  padding-left: 13vw;
+  padding-right: 13vw;
+  color: #EFE9E7;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.aboutUs {
+  text-decoration: underline;
+  padding-bottom: 28px;
+}
+
+.aboutMe {
+  text-align: center;
+  color: #EFE9E7;
+  font-size: 16px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.homeButton:hover {
+  transform: scale(1.3, 1.3);
+  transition: 0.75s;
+  color: #EFE9E7;
+}
+
+
+.homeButtonContainer {
+    display: flex;
+}
+
+.homeButton {
+    font-size: 30px;
+    margin: 35px;
+    cursor: pointer;
+    height: 100px;
+    width: 175px;
+    background-color: #CF5300;
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    font-family: sans-serif;
+    color: #EFE9E7;
+    padding-top: 30px;
+    border: none;
+}

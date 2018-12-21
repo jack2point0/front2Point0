@@ -1,0 +1,58 @@
+.form-horizontal {
+  color: #EFE9E7;
+}
+
+.ownershipHeader {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.ownership {
+    display: flex;
+}
+
+p > span {
+    margin-right: 10px;
+}
+
+label {
+  font-size: 16px;
+}
+
+.control-label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.form-group {
+padding-left: 70px;
+padding-right: 100px;
+}
+
+.ownerLabel {
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.regButtonContainer {
+    height: 20px;
+    cursor: pointer;
+}
+
+.regButton {
+    height: 32px;
+    width: 100px;
+    background-color: #EFE9E7;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: sans-serif;
+    color: #292f36;
+    padding-top: 1px;
+    margin-top: 5px;
+}
+
+#formHorizontalPassword,#formHorizontalEmail {
+  background-color: #EFE9E7;
+}

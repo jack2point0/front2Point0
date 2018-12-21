@@ -1,0 +1,115 @@
+* {
+    font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+html {
+  transition: 0.5s;
+  background-color: #292f36;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #CF5300;
+    text-decoration: none;
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+.b {
+  background-color: #292f36;
+  min-height: 100vh;
+  position: relative;
+  transition: 0.5s
+}
+
+input,button {
+  font-family: sans-serif;
+  color: #292f36;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid black; */
+  align-items: center;
+  color: #EFE9E7;
+}
+
+.bodyContainer {
+display: flex;
+flex-direction: row;
+justify-content: center;
+/* border: 0.5px solid blue; */
+max-width: 1220px;
+flex-wrap: wrap;
+}
+
+.box {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 255px;
+}
+
+input {
+  width: 150px;
+}
+.testing {
+  width: 80vw;
+}
+
+.tab-pane.fade {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tabsContainer {
+display: flex;
+flex-direction: column;
+max-width: 1300px;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.buttonDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  margin: 50px;
+}
+
+#notesField {
+  margin-bottom: 40px;
+}
+
+.errors {
+  color: #CF5300;
+  font-weight: bold;
+  padding-left: 120px;
+}
+
+.errors::first-letter {
+  text-transform: capitalize;
+}
+
+.greeting {
+  padding-left: 40px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #CF5300;
+  border-bottom: 1px solid #EFE9E7;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+@media(max-width: 678px) {
+    .tabsContainer {
+        max-width: 405px;
+    }
+}

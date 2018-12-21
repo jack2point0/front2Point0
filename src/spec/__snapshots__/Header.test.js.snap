@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Header correctly 1`] = `
+<main
+  className="headerDiv navbar"
+>
+  <section
+    className="logoContainer"
+  >
+    <div
+      className="BrandName"
+    >
+      <a
+        className="logo"
+        href="/"
+      >
+        <i
+          className="fas fa-arrow-alt-circle-up fa-2x"
+        />
+        wn-Up Grown-Up
+      </a>
+    </div>
+  </section>
+  <nav>
+    <div>
+      <div
+        className="navContainer openSlide openSlideMenu"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <a
+          href="#"
+          onClick={[Function]}
+        >
+          <i
+            class="fas fa-bars fa-2x"
+          />
+        </a>
+      </div>
+      <section
+        className="nav navContainer navbar-nav"
+      >
+        <div
+          className="navBarLink homeLink"
+        >
+          <a
+            href="/"
+          >
+            HOME
+          </a>
+        </div>
+      </section>
+    </div>
+    <div
+      className=""
+      id="side-menu"
+    >
+      <section
+        className="navContainer sideNav"
+        style={
+          Object {
+            "width": 0,
+          }
+        }
+      >
+        <a
+          className="btn-close"
+          href="#"
+          onClick={[Function]}
+        >
+          ×
+        </a>
+        <div
+          className="sideNavLink"
+        >
+          <a
+            href="/"
+          >
+            HOME
+          </a>
+        </div>
+      </section>
+    </div>
+  </nav>
+</main>
+`;

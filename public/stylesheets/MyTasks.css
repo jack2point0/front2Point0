@@ -1,0 +1,132 @@
+.tileLinks {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* height: 40px; */
+}
+
+textarea {
+    color: black;
+    resize: none;
+}
+
+a {
+  color: #EFE9E7;
+}
+
+.editTitleTile {
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: center;
+}
+
+.myTaskHR {
+  margin-left: 30px;
+  margin-right: 30px;
+  opacity: 0.4;
+}
+
+.myTaskTopHR {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.editMyTaskBtn {
+    cursor: pointer;
+}
+
+#myTaskTile {
+  display: flex;
+  flex-direction: column;
+  background-color: #242A30;
+  border: 4px solid #CF5300;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 7px;
+  min-width: 275px;
+  max-width: 275px;
+  min-height: 300px;
+  position: relative;
+  box-shadow: 3px 5px rgba(0, 0, 0, .15);
+}
+
+.editTile {
+  display: flex;
+  flex-direction: column;
+  background-color: #242A30;
+  border: 4px solid #CF5300;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  padding: 10px;
+  min-width: 275px;
+  max-width: 275px;
+  min-height: 300px;
+  box-shadow: 3px 5px rgba(0, 0, 0, .15);
+  color: #efe9e7
+}
+
+.myTaskSpan {
+  font-weight: bold;
+}
+
+.editTileContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.editTileDescription {
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.tileDescription {
+  font-weight: 600
+}
+
+.fa-thumbs-up {
+  color: green;
+}
+
+.fa-trash-alt {
+  color: #c90808;
+}
+
+.regButtonContainer {
+    height: 20px;
+    cursor: pointer;
+}
+
+.regButton {
+    height: 30px;
+    width: 80px;
+    background-color: #EFE9E7;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: sans-serif;
+    color: #292f36;
+    padding-top: 1px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.editButton {
+    margin-right: 44px;
+}
+
+.deleteButton {
+    margin-left: 44px;
+}
+
+.editTileButtons {
+    display: flex;
+    flex-direction: row;
+}
