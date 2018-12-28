@@ -7,6 +7,12 @@
   box-shadow: 0px 2px rgba(0, 0, 0, .15);
 }
 
+.logoContainer {
+  float:left;
+  padding-left: 20px;
+  padding-top: 9px;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -25,25 +31,20 @@
   text-decoration: none;
 }
 
-
-
-
-
-
-
-
-
-
-.logoContainer {
+.smallLogoContainer {
   float:left;
   padding-left: 20px;
-  padding-top: 9px;
+  padding-top: 9px
 }
 
-.smallLogoContainer {
-    float:left;
-    padding-left: 20px;
-    padding-top: 9px
+.fa-bars {
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.fa-bars:hover {
+  color: #EFE9E7;
+  text-decoration: none;
 }
 
 .navContainer {
@@ -75,9 +76,8 @@
   text-decoration: none;
 }
 
-
-.nav {
-  color: #EFE9E7
+.logoutLink, .homeLink {
+  margin-right: 25px;
 }
 
 /* mobile nav bar styling */
@@ -101,6 +101,16 @@
   padding-left: 20px;
 }
 
+/* TWO CLASSES WITH THE SAME NAME!! */
+.sideNavLink {
+  margin: 0px 5px 5px 10px;
+  padding-top: 22px;
+}
+
+.sideNavLink:hover {
+  background-color: #292F36;
+}
+
 .sideNav a {
   padding: 0px 10px 10px 20px;
   text-decoration: none;
@@ -111,6 +121,7 @@
   color: #EFE9E7
 }
 
+/* IS THERE A REASON THIS HAS TWO CLASSES?*/
 .sideNav .btn-close {
   position: absolute;
   top: 0;
@@ -118,40 +129,28 @@
   font-size: 42px;
 }
 
-.navBarLink > a:hover {
-  color: #EFE9E7;
-  text-decoration: none;
-}
-
-.fa-bars {
-  margin-top: 15px;
-  margin-right: 10px;
-}
-
-.fa-bars:hover {
-  color: #EFE9E7;
-  text-decoration: none;
-}
-
-.logoutLink, .homeLink {
-  margin-right: 25px;
-}
-
-.sideNavLink {
-    margin: 0px 5px 5px 10px;
-    padding-top: 22px;
-}
-
-.sideNavLink:hover {
-    background-color: #292F36;
-}
-
 .openSlide:hover {
   color: #EFE9E7;
   text-decoration: none;
 }
 
-#main {
+
+
+
+
+
+
+.nav { /* ONLY USED IN LN 68 OF INDEX****************************/
+  color: #EFE9E7
+}
+
+.container { /* NEVER USED ************************************/
+  margin: 0px;
+  width: 100vw;
+  display: flex;
+}
+
+#main { /* NEVER USED ************************************/
   transition: margin-right 0.5s;
   padding: 20px;
   overflow: visible;
@@ -186,10 +185,4 @@
   .logoContainer {
      display: flex;
   }
-}
-
-.container {
-  margin: 0px;
-  width: 100vw;
-  display: flex;
 }

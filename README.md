@@ -12,7 +12,10 @@ TODO:
   Add id to <i> tags so that if no internet connection, still shows something
   Move stylesheets to corresponding page folders
   App.css has a .testing class - what is it used for?
-  bodyBox in taskCard and myTaskCard is declared but never defined in any css file
+  bodyBox in taskCard and myTaskCard is assigned but never defined in any css file
+  Media query for navbar for transition from full to smaller window
+  navbar-nav in header styles is only used in a media query. Is there a better way to do this?
+  Duplicate classes for sideNavBar in header styles
 
 
 ***********CSS cleanup - Stopped at header folder******

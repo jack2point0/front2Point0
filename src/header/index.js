@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import AuthService from '../_API/services';
+import './styles.css'
 
 class Header extends Component {
   constructor(props) {
@@ -17,16 +18,15 @@ class Header extends Component {
     return (
       <main className="headerDiv navbar">
         <section className="logoContainer">
-          <div className = "BrandName">
+          <div>
             <a className="logo" href="/">
               <i className="fas fa-arrow-alt-circle-up fa-2x"></i>wn-Up Grown-Up</a>
           </div>
         </section>
         <section className="smallLogoContainer">
-          <div className = "BrandName">
+          <div>
             <a className="logo" href="/">
               <i className="fas fa-arrow-alt-circle-up fa-2x">
-
               </i>wn-Up
             </a>
           </div>
@@ -75,7 +75,7 @@ class Header extends Component {
               </section>
           }
           </div>
-          <div id="side-menu" className="">
+          <div>
             {this.auth.loggedIn()
               ? <section style={{width: this.state.width}} className="navContainer sideNav">
                 <a href="#" className="btn-close" onClick={() => this.openSlideMenu()}>&times;</a>

@@ -21,6 +21,10 @@ a:hover {
     text-decoration: none;
 }
 
+input {
+  width: 150px;
+}
+
 .greeting {
   padding-left: 40px;
   margin-bottom: 20px;
@@ -147,9 +151,6 @@ max-width: 1220px;
 flex-wrap: wrap;
 }
 
-input {
-  width: 150px;
-}
 
 .tab-pane.fade {
   display: flex;
