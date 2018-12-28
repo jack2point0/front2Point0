@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { getMyTask, editMyTask, deleteMyTask } from '../API';
+import { getMyTask, editMyTask, deleteMyTask } from '../_API';
 import { Redirect } from 'react-router-dom'
+import './styles.css'
 
 class EditMyTaskCard extends Component {
   constructor(props){
@@ -35,14 +36,14 @@ class EditMyTaskCard extends Component {
     return (
       <main>
         <section>
-          <h1 className="greeting">
+          <h1 className="greeting">{/*from App.css*/}
           Edit/Delete:
           </h1>
         </section>
         <section className="editTileContainer">
           <div className="editTile">
             <div className="editTitleTile">
-                <label className="tileTitle">
+                <label className="tileTitle">{/*from App.css*/}
                   {this.state.form.task.title}
                 </label>
             </div>
@@ -56,7 +57,12 @@ class EditMyTaskCard extends Component {
                     Due Date:
                   </label>
                   <br/>
-                  <input type="date" value={due_date} name="due_date" onChange={this.handleChange} />
+                  <input
+                    type="date"
+                    name="due_date"
+                    value={due_date}
+                    onChange={this.handleChange}
+                    />
                 </td>
                 <br/>
                 <td>
@@ -64,7 +70,13 @@ class EditMyTaskCard extends Component {
                     How often (days)?
                   </label>
                   <br/>
-                  <input type="number" name="frequency" value={frequency} onChange={this.handleChange} pattern="[0-9]"/>
+                  <input
+                    type="number"
+                    name="frequency"
+                    value={frequency}
+                    onChange={this.handleChange}
+                    pattern="[0-9]"
+                    />
                 </td>
                 <br/>
                 <td>
@@ -73,16 +85,26 @@ class EditMyTaskCard extends Component {
                     </label>
                     <br/>
                     <textarea
-                        rows="4" cols="28" value={notes} name="notes" onChange={this.handleChange}>
-                    </textarea>
+                      value={notes}
+                      name="notes"
+                      rows="4"
+                      cols="28"
+                      onChange={this.handleChange}></textarea>
                 </td>
                 <br/>
                 <div className="tileLinks">
                     <div className="editTileButtons">
-                      <div className="regButton editButton" onClick={this.handleEdit}>
+                      <div
+                        className="regButton editButton"
+                        onClick={this.handleEdit}
+                        >
                         Accept
                       </div>
-                      <div className="regButton deleteButton" title="Delete Task" onClick={() => this.handleDelete(this.state.form.mytask.id)}>
+                      <div
+                        className="regButton deleteButton"
+                        title="Delete Task"
+                        onClick={() => this.handleDelete(this.state.form.mytask.id)}
+                        >
                         Delete
                       </div>
                     </div>

@@ -1,0 +1,63 @@
+.tileBtn {
+  height: 32px;
+  width: 100px;
+  background-color: #EFE9E7;
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 5px;
+  font-family: sans-serif;
+  color: #292f36;
+  padding-top: 4px;
+  cursor: pointer;
+}
+
+.tileBtnContainer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5vh;
+  margin-bottom: 10px;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  background-color: #242A30;
+  border: 4px solid #CF5300;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 7px;
+  min-width: 275px;
+  max-width: 275px;
+  min-height: 350px;
+  position: relative;
+  box-shadow: 3px 5px rgba(0, 0, 0, .15)
+}
+
+.box {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 255px;
+}
+
+.expansionContainer {
+  margin-bottom: 30px;
+}
+
+.expansionInput {
+  width: 243px;
+}
+
+.tileDescription {
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #EFE9E7;
+  min-height: 115px;
+}

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Form, FormGroup, Col, FormControl, Button, ControlLabel } from 'react-bootstrap';
-import AuthService from '../services'
+import AuthService from '../_API/services'
 
-class Sign_In extends Component {
+class SignIn extends Component {
   constructor(props){
     super(props)
     this.auth = new AuthService()
@@ -110,4 +110,4 @@ class Sign_In extends Component {
   }
 }
 
-export default Sign_In;
+export default SignIn;

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AuthService from '../services';
+import AuthService from '../_API/services';
 
 class Header extends Component {
   constructor(props) {

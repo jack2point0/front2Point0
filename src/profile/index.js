@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import AuthService from '../services'
-import { getProfile } from '../API'
-import ViewPersonalProfile from '../Components/viewPersonalProfile'
-import EditPersonalProfile from '../Components/editPersonalProfile'
-import ViewProfilePreferences from '../Components/viewProfilePreferences'
-import EditProfilePreferences from '../Components/editProfilePreferences'
+import AuthService from '../_API/services'
+import { getProfile } from '../_API'
+import ViewPersonalProfile from './viewPersonalProfile'
+import EditPersonalProfile from './editPersonalProfile'
+import ViewProfilePreferences from './viewProfilePreferences'
+import EditProfilePreferences from './editProfilePreferences'
 
 class Profile extends Component {
   constructor(props) {

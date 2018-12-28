@@ -7,6 +7,11 @@ html {
   background-color: #292f36;
 }
 
+input,button {
+  font-family: sans-serif;
+  color: #292f36;
+}
+
 a {
     text-decoration: none;
 }
@@ -14,6 +19,112 @@ a {
 a:hover {
     color: #CF5300;
     text-decoration: none;
+}
+
+.greeting {
+  padding-left: 40px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #CF5300;
+  border-bottom: 1px solid #EFE9E7;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #EFE9E7;
+  min-height: 100vh;
+  padding-bottom: 30px;
+}
+
+.taskTabsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-bottom: 1.5px #EFE9E7 solid;
+}
+
+/**************************EXTRA CLASS WITH THE SAME NAME*/
+/* .taskContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 1300px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+} */
+
+.categoryTab {
+  height: 45px;
+  background-color: #EFE9E7;
+  padding-top: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 2px 2px 0px 2px;
+  font-size: 16px;
+  /* NOTE: look at grey color and make hex */
+  color: grey;
+  cursor: pointer;
+  box-shadow: 0 1px 1 rgba(30, 30, 32, 0.9) inset, 0 8px 16px rgba(0, 0, 0, 0.8);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  text-align: center;
+}
+
+.todayTab {
+  margin-left: 15px;
+}
+
+.taskTileContainer {
+  display: flex;
+  width: 100vw;
+  max-width: 1400px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tileTitle {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: #CF5300;
+  min-height: 70px;
+}
+
+.catInfoContainer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  color: #EFE9E7;
+  align-items: center;
+  min-height: 60px;
+  margin-top: 5px;
+  text-align: right;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.regButtonContainer {
+    height: 20px;
+    cursor: pointer;
+}
+
+.fa-home {
+  font-size: 16px;
 }
 
 .form-control {
@@ -27,19 +138,6 @@ a:hover {
   transition: 0.5s
 }
 
-input,button {
-  font-family: sans-serif;
-  color: #292f36;
-}
-
-.table {
-  display: flex;
-  flex-direction: column;
-  /* border: 2px solid black; */
-  align-items: center;
-  color: #EFE9E7;
-}
-
 .bodyContainer {
 display: flex;
 flex-direction: row;
@@ -49,17 +147,8 @@ max-width: 1220px;
 flex-wrap: wrap;
 }
 
-.box {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  width: 255px;
-}
-
 input {
   width: 150px;
-}
-.testing {
-  width: 80vw;
 }
 
 .tab-pane.fade {
@@ -67,13 +156,6 @@ input {
   flex-wrap: wrap;
 }
 
-.tabsContainer {
-display: flex;
-flex-direction: column;
-max-width: 1300px;
-flex-wrap: wrap;
-justify-content: space-around;
-}
 
 .buttonDiv {
   display: flex;
@@ -81,10 +163,6 @@ justify-content: space-around;
   justify-content: center;
   justify-content: space-around;
   margin: 50px;
-}
-
-#notesField {
-  margin-bottom: 40px;
 }
 
 .errors {
@@ -97,15 +175,6 @@ justify-content: space-around;
   text-transform: capitalize;
 }
 
-.greeting {
-  padding-left: 40px;
-  margin-bottom: 20px;
-  font-weight: 500;
-  color: #CF5300;
-  border-bottom: 1px solid #EFE9E7;
-  margin-left: 50px;
-  margin-right: 50px;
-}
 
 
 @media(max-width: 678px) {

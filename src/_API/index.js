@@ -1,4 +1,4 @@
-import AuthService from '../services';
+import AuthService from '../_API/services';
 const auth = new AuthService();
 
 const BASE = process.env.REACT_APP_API_URL

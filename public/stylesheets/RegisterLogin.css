@@ -34,11 +34,6 @@ padding-right: 100px;
     padding-top: 10px;
 }
 
-.regButtonContainer {
-    height: 20px;
-    cursor: pointer;
-}
-
 .regButton {
     height: 32px;
     width: 100px;
