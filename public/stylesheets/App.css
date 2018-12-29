@@ -49,10 +49,13 @@ input {
   flex-direction: row;
   justify-content: flex-start;
   border-bottom: 1.5px #EFE9E7 solid;
+  max-width: 1300px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 /**************************EXTRA CLASS WITH THE SAME NAME*/
-/* .taskContainer {
+/* .taskTabsContainer {
   display: flex;
   flex-direction: column;
   max-width: 1300px;
@@ -179,7 +182,7 @@ flex-wrap: wrap;
 
 
 @media(max-width: 678px) {
-    .tabsContainer {
+    .taskTabsContainer {
         max-width: 405px;
     }
 }

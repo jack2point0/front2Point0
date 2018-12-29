@@ -32,7 +32,7 @@ class AllTasks extends Component {
           </h1>
         </section>
         <div className="table"> {/*from App.css*/}
-        <section>
+        <section className="tabsContainer">
             <section className="taskTabsContainer"> {/*from App.css*/}
                 <div onClick={() => this.tabClick(0)} className="categoryTab todayTab"> {/*from App.css*/}
                   House
