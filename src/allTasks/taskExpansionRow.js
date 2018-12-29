@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import AuthService from '../services';
-import AcceptButton from './AcceptButton'
-import { getProfile } from '../API';
+import { getProfile } from '../_API';
+import AuthService from '../_API/services';
+import AcceptButton from './acceptButton'
 
 
 class TaskExpansionRow extends Component {

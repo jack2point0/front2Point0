@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AuthService from '../services'
+import AuthService from '../_API/services'
 import { Form, FormGroup, Col, FormControl, ControlLabel, Checkbox } from 'react-bootstrap';
 import Toggle from "react-toggle-component"
 import "react-toggle-component/styles.css"

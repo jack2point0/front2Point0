@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Form, FormGroup, Col } from 'react-bootstrap';
-import { editProfile } from '../API'
+import { editProfile } from '../_API'
 
 
 class EditPersonalProfile extends Component {

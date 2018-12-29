@@ -1,19 +1,17 @@
 import React, { Component } from 'react';
-import Header from './Components/Header.js'
-import Footer from './Components/Footer.js'
-import Dashboard from './Pages/Dashboard.js'
-import Home from './Pages/Home.js'
-import Instructions from './Pages/Instructions.js'
-import Registration from './Pages/Registration.js'
-import Sign_In from './Pages/Sign_in.js'
-import Task_Index from './Pages/Task_index.js'
+import { getMyTasks } from './_API';
+import AuthService from './_API/services'
+import Home from './home'
+import Dashboard from './dashboard'
+import Registration from './registration'
+import SignIn from './signIn'
+import Instructions from './instructions'
+import Profile from './profile'
+import AllTasks from './allTasks'
+import EditMyTaskCard from './dashboard/editMyTaskCard'
+import Header from './header'
+import Footer from './footer'
 import { Redirect, BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import AuthService from './services'
-import { getMyTasks } from './API';
-import Appointments from './Pages/Appointments'
-import AptForm from './Pages/aptForm'
-import EditMyTaskCard from './Components/editMyTaskCard'
-import Profile from './Pages/Profile'
 
 
 class App extends Component {
@@ -44,15 +42,13 @@ class App extends Component {
                 <Route exact path='/user/my_tasks/:id/edit' render={(routeProps) => <EditMyTaskCard refresh={this.refresh} {...routeProps}/>} />
                 <Route exact path='/instructions' component={Instructions} />
                 <Route exact path='/profile' render={(routeProps) => <Profile refresh={this.refresh} {...routeProps}/>} />
-                <Route exact path='/tasks' render={(props) => <Task_Index userID={this.state.userID} />} />
-                <Route exact path='/appointments' component={Appointments} />
-                <Route exact path='/appointments/new' component={AptForm} />
+                <Route exact path='/tasks' render={(props) => <AllTasks userID={this.state.userID} />} />
                 <Route path='/' render={(props) => <Dashboard myTasks={this.state.myTasks} />} />
               </Switch>
 
               :
               <Switch> //public paths
-                <Route exact path='/login' render={(props) => <Sign_In refresh={this.refresh}/>} />
+                <Route exact path='/login' render={(props) => <SignIn refresh={this.refresh}/>} />
                 <Route exact path='/register' render={(props) => <Registration refresh={this.refresh}/> }/>
                 <Route path='/' component={Home} />
               </Switch>

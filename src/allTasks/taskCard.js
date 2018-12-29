@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import TaskExpansionRow from './TaskExpansionRow'
-import AddButton from './AddButton'
+import TaskExpansionRow from './taskExpansionRow'
 import TaskTileDescription from './taskTileDescription'
+import AddButton from './addButton'
 
-class Task_Card extends Component {
+class TaskCard extends Component {
   constructor(props) {
     super(props)
 
@@ -16,14 +16,14 @@ class Task_Card extends Component {
     return (
       <div className="tile">
         <div>
-          <div className="bodyBox box">
+          <div className="box">
             <div className="catInfoContainer">
               <i class={this.iconChooser(this.props.info.category)}></i>
               {this.props.info.sub_category}
             </div>
             <hr/>
           </div>
-          <div className="bodyBox box tileTitle">
+          <div className="box tileTitle">
           {this.props.info.title}
           </div>
           {this.state.on === false && <TaskTileDescription description={this.props.info.description}/>}
@@ -62,4 +62,4 @@ class Task_Card extends Component {
 
 }
 
-export default Task_Card;
+export default TaskCard;

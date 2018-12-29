@@ -1,31 +1,32 @@
 import React, { Component } from 'react';
-import { editMyTask } from '../API'
+import { editMyTask } from '../_API'
+import './styles.css'
 
 class My_Task_Card extends Component {
   render() {
     return (
-      <div id="myTaskTile" className="myTaskTile">
-          <div className="bodyBox">
-            <div className="catInfoContainer">
+      <div className="myTaskTile">
+          <div>
+            <div className="catInfoContainer">{/*from App.css*/}
               <i class={this.iconChooser(this.props.info.task.category)}></i>
               {this.props.info.task.sub_category}
             </div>
             <hr className="myTaskTopHR"/>
           </div>
-          <div className="bodyBox tileTitle">
+          <div className="tileTitle">{/*from App.css*/}
             {this.props.info.task.title}
           </div>
-          <div className="bodyBox tileDescription">
+          <div className="tileDescription">
             {this.props.info.task.description}
           </div>
           <hr className="myTaskHR"/>
-          <div className="bodyBox tileInformation">
+          <div className="tileInformation">
             <span className="myTaskSpan">Due date:</span> {this.props.info.my_task.due_date}
           </div>
-          <div className="bodyBox tileInformation">
+          <div className="tileInformation">
             <span className="myTaskSpan">Frequency:</span> {this.props.info.my_task.frequency} days
           </div>
-          <div id="notesField" className="bodyBox tileInformation">
+          <div className="tileInformation">
               <span className="myTaskSpan">Notes:</span> {this.props.info.my_task.notes}
           </div>
 

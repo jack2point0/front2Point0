@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import AuthService from '../services'
-import { getProfile, editProfile } from '../API'
+import AuthService from '../_API/services'
+import { getProfile, editProfile } from '../_API'
 import Toggle from "react-toggle-component"
 import "react-toggle-component/styles.css"
 

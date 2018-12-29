@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { ButtonToolbar, Button } from 'react-bootstrap';
-// import { Link } from 'react-router-dom';
 
 class Home extends Component {
   render() {

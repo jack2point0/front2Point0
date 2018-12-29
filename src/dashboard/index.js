@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import AuthService from '../services';
-import My_Task_Card from '../Components/My_task_card';
-import { getMyTasks } from '../API'
+import { getMyTasks } from '../_API'
+import AuthService from '../_API/services';
+import MyTaskCard from './myTaskCard';
+import './styles.css'
 
 class Dashboard extends Component {
   constructor(props) {
@@ -45,37 +46,37 @@ class Dashboard extends Component {
     return (
       <main>
         <section>
-          <h1 className="greeting">
+          <h1 className="greeting"> {/*from App.css*/}
           Dashboard:
           </h1>
         </section>
-        <div className="table">
-        <section className="testing DashboardContainer">
-            <section className="tabsContainer">
-                <div onClick={() => this.tabClick(0)} className="dashboardTab todayTab">
+        <div className="table"> {/*from App.css*/}
+        <section>
+            <section className="taskTabsContainer"> {/*from App.css*/}
+                <div onClick={() => this.tabClick(0)} className="categoryTab todayTab">{/*from App.css*/}
                   Today/Overdue
                 </div>
-                <div onClick={() => this.tabClick(1)} className="dashboardTab">
+                <div onClick={() => this.tabClick(1)} className="categoryTab">
                   Next 30 Days
                 </div>
-                <div onClick={() => this.tabClick(2)} className="dashboardTab">
+                <div onClick={() => this.tabClick(2)} className="categoryTab">
                   Next 3 Months
                 </div>
 
-                <div onClick={() => this.tabClick(5)} className="dashboardTab">
+                <div onClick={() => this.tabClick(5)} className="categoryTab">
                   All My Tasks
                 </div>
             </section>
         </section>
 
-        <section className="tilesContainer">
+        <section className="taskTileContainer"> {/*from App.css*/}
         {(() => {
                 switch(this.state.activeTab) {
                   case 0:
                     return todayTasks.length > 0
                       ?  todayTasks.map((el, i) => {
                           return (
-                            <My_Task_Card
+                            <MyTaskCard
                             key={i}
                             info={el}
                             addDays={this.addDays}
@@ -88,7 +89,7 @@ class Dashboard extends Component {
                     return next30Days.length > 0
                       ?  next30Days.map((el, i) => {
                         return (
-                          <My_Task_Card
+                          <MyTaskCard
                           key={i}
                           info={el}
                           addDays={this.addDays}
@@ -101,7 +102,7 @@ class Dashboard extends Component {
                     return next3Months.length > 0
                       ?  next3Months.map((el, i) => {
                         return (
-                          <My_Task_Card
+                          <MyTaskCard
                           key={i}
                           info={el}
                           addDays={this.addDays}
@@ -114,7 +115,7 @@ class Dashboard extends Component {
                     return homeTasks.length > 0
                       ?  homeTasks.map((el, i) => {
                         return (
-                          <My_Task_Card
+                          <MyTaskCard
                           key={i}
                           info={el}
                           addDays={this.addDays}
@@ -127,7 +128,7 @@ class Dashboard extends Component {
                     return carTasks.length > 0
                       ?  carTasks.map((el, i) => {
                         return (
-                          <My_Task_Card
+                          <MyTaskCard
                           key={i}
                           info={el}
                           addDays={this.addDays}
@@ -140,7 +141,7 @@ class Dashboard extends Component {
                     return myTasks.length > 0
                       ?  myTasks.map((el, i) => {
                         return (
-                          <My_Task_Card
+                          <MyTaskCard
                           key={i}
                           info={el}
                           addDays={this.addDays}
@@ -148,7 +149,11 @@ class Dashboard extends Component {
                           />
                         )
                       })
-                      : <h3>You do not have any tasks assigned to you. Click "Add Tasks" in the header to assign yourself tasks.</h3>
+                      : <h3>
+                          You do not have any tasks assigned to you.
+                          Click "Add Tasks" in the header to assign
+                          yourself tasks.
+                        </h3>
                 }
             })()}
 
