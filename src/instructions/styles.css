@@ -1,0 +1,114 @@
+hr {
+  margin: 40px 120px
+}
+
+img {
+    width: 700px;
+    border: 1px solid #CF5300;
+    padding: 10px;
+    box-shadow: 3px 5px rgba(0, 0, 0, .2);
+}
+
+.body {
+  color: #EFE9E7;
+  padding: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.title {
+    padding-left: 40px;
+    font-weight: bold;
+}
+
+.content {
+  padding-left: 40px;
+  padding-right: 60px;
+  font-size: 18px;
+  max-width: 40vw;
+}
+
+.gettingStartedContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gettingStarted {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profileContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.remindersContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.reminders {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dashboardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1300px) {
+    img {
+        width: 500px;
+    }
+    .instructionsVertImg { /* *********NEVER USED*************** */
+        height: 220px;
+    }
+    .body {
+        padding: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 1300px) {
+    img {
+        width: 500px;
+    }
+
+    .body {
+        padding: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 943px) {
+    img {
+        width: 300px;
+    }
+    .body {
+        max-width: 80vw;
+    }
+
+}
