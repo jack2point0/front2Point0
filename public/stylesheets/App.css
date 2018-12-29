@@ -51,7 +51,6 @@ input {
   border-bottom: 1.5px #EFE9E7 solid;
   max-width: 1300px;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 /**************************EXTRA CLASS WITH THE SAME NAME*/
